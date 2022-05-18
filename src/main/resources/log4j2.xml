@@ -52,7 +52,7 @@
                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
                 <SizeBasedTriggeringPolicy size="100M"/>
             </Policies>
-
+            <ThresholdFilter level="info" onMatch="NEUTRAL" onMismatch="DENY"/>
         </RollingFile>
     </Appenders>
 
